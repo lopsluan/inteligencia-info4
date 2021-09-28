@@ -1,18 +1,36 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, CheckBox } from "react-native";
+import { View, Image } from "react-native";
 
 import FormInput from "../../components/form-input/form-input.component";
 import CustomButton from "../../components/custom-button/custom-button.component";
+import { CheckBox } from "react-native-elements";
+
+import styles from "./login.style";
 
 import Logo from "../../../assets/Logo.png";
 
 const Login = () => {
+  const [isSelected, setIsSelected] = React.useState(false);
+
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={Logo} />
       <View style={styles.form}>
         <FormInput label="Login:" />
         <FormInput label="Senha:" type="password" />
+        <CheckBox
+          center
+          title="Manter Conectado"
+          checked={isSelected}
+          checkedIcon="check-circle"
+          uncheckedIcon="circle-o"
+          containerStyle={styles.checkbox}
+          checkedColor="black"
+          onPress={() =>
+            isSelected ? setIsSelected(false) : setIsSelected(true)
+          }
+          textStyle={styles.checkBoxText}
+        />
         <CustomButton text="Entrar" />
       </View>
     </View>
@@ -20,24 +38,3 @@ const Login = () => {
 };
 
 export default Login;
-
-const styles = StyleSheet.create({
-  container: {
-    // flex: 1,
-    backgroundColor: "#E5E5E5",
-    alignItems: "center",
-    justifyContent: "space-evenly",
-    width: "100%",
-    height: "100%",
-  },
-
-  logo: {
-    maxWidth: "60%",
-    resizeMode: "center",
-  },
-
-  form: {
-    width: "100%",
-    alignItems: "center",
-  },
-});
