@@ -20,6 +20,11 @@ const styles = StyleSheet.create({
     height: 35,
     paddingHorizontal: 5,
   },
+
+  errorMessage: {
+    width: "75%",
+    color: "#F55",
+  },
 });
 
 export default styles;

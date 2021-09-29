@@ -8,19 +8,24 @@ const styles = StyleSheet.create({
     alignItems: "center",
     margin: 3,
     backgroundColor: "#FFF",
+    borderColor: "#999999",
   },
 
   header: {
     width: "90%",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     flexDirection: "row",
-    paddingBottom: 15,
+    paddingVertical: 10,
+  },
+
+  title: {
+    maxWidth: "95%",
   },
 
   conteudo: {
     width: "85%",
     alignItems: "center",
-    justifyContent: "center",
+    padding: 10,
   },
 
   border: {
@@ -28,12 +33,17 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderStyle: "dashed",
     borderRadius: 1,
-    marginVertical: 10,
+    borderColor: "#999999",
   },
 
   footer: {
     width: "90%",
-    paddingTop: 15,
+    paddingVertical: 10,
+  },
+  img: {
+    resizeMode: "stretch",
+    minHeight: 200,
+    minWidth: "100%",
   },
 });
 

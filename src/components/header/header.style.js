@@ -7,9 +7,8 @@ const styles = StyleSheet.create({
     height: "10%",
     backgroundColor: "#FFFFFF",
     justifyContent: "space-between",
-    marginTop: "5%",
     alignItems: "center",
-    paddingHorizontal: 15,
+    paddingTop: 10,
   },
 
   logo: {

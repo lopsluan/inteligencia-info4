@@ -19,28 +19,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  checkbox: {
-    backgroundColor: "#E5E5E5",
-    borderWidth: 0,
-  },
-
-  checkBoxText: {
-    fontWeight: "normal",
-  },
-
-  registerButton: {
-    backgroundColor: "#E5E5E5",
-  },
-
   buttonsContainer: {
     width: "70%",
     flexDirection: "row",
     justifyContent: "space-between",
   },
 
-  textStyle: {
-    color: "#101010",
-    fontSize: 17,
+  cancelButton: {
+    backgroundColor: "#E5E5E5",
   },
 });
 

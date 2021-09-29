@@ -3,11 +3,10 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   button: {
     borderRadius: 20,
-
-    //TODO: Cor errada
     backgroundColor: "#796d6d2a",
     paddingHorizontal: "10%",
     paddingVertical: "2%",
+    maxWidth: 150,
   },
 
   text: {
